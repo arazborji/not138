@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3826de">
+  <meta name="description" content="وب‌سایت دفتر اسناد رسمی ۱۳۸ تبریز، غلامرضا برجی دولت‌آباد؛ خدمات اسناد رسمی، مدارک لازم، فرم‌ها و راه‌های ارتباطی.">
+  <title>دفتر اسناد رسمی ۱۳۸ تبریز | غلامرضا برجی دولت‌آباد</title>
+  <link rel="icon" href="assets/logo.png" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="صفحه اصلی دفتر اسناد رسمی ۱۳۸ تبریز">
+      <img src="assets/logo.png" alt="نشان گرافیکی دفتر اسناد رسمی" width="58" height="58">
+      <span><strong>دفتر اسناد رسمی ۱۳۸ تبریز</strong><small>سردفتر: غلامرضا برجی دولت‌آباد</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ <span class="sr-only">باز کردن منو</span></button>
+    <nav id="mainNav" class="main-nav" aria-label="منوی اصلی">
+      <a href="#home">خانه</a><a href="#services">خدمات</a><a href="#documents">مدارک</a>
+      <a href="#calculator">محاسبه هزینه</a><a href="#forms">دریافت فرم</a><a href="#remote">ارسال مدارک</a>
+      <a href="#faq">سوالات متداول</a><a href="#contact">تماس با ما</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">خدمات رسمی و ثبتی</span>
+      <h1>دفتر اسناد رسمی <span>۱۳۸ تبریز</span></h1>
+      <h2>غلامرضا برجی دولت‌آباد</h2>
+      <p>اطلاعات خدمات، مدارک مورد نیاز، فرم‌های قابل دریافت و راه‌های ارتباط با دفتر را در یکجا ببینید.</p>
+      <div class="hero-actions"><a class="btn btn-light" href="#services">مشاهده خدمات</a><a class="btn btn-outline" href="#contact">راه‌های تماس</a></div>
+      <div class="hero-meta"><span>شنبه تا چهارشنبه: ۸ تا ۱۴</span><span>پنجشنبه: ۸ تا ۱۳</span></div>
+    </div>
+    <div class="hero-card">
+      <div class="seal"><img src="assets/logo.png" alt="" width="96" height="96"></div>
+      <p class="hero-card-title">دفتر اسناد رسمی ۱۳۸ تبریز</p>
+      <p>همراه شما در تنظیم و ثبت اسناد رسمی</p>
+      <a class="phone-big" href="tel:04134413842">۰۴۱۳۴۴۱۳۸۴۲</a>
+      <small>تلفن مستقیم سردفتر</small>
+    </div>
+  </div>
+</section>
+
+<section class="quick-links container" aria-label="دسترسی سریع">
+  <a href="#calculator"><span>٪</span><b>برآورد هزینه سند</b><small>برآورد اولیه و راهنمایی</small></a>
+  <a href="#documents"><span>▤</span><b>مدارک لازم</b><small>پیش از مراجعه بررسی کنید</small></a>
+  <a href="#forms"><span>⇩</span><b>دریافت فرم</b><small>فایل‌های مورد نیاز دفتر</small></a>
+  <a href="#remote"><span>↗</span><b>ارسال غیرحضوری</b><small>از طریق پیام‌رسان‌ها</small></a>
+</section>
+
+<section id="services" class="section container">
+  <div class="section-heading"><span class="eyebrow">خدمات دفترخانه</span><h2>خدمات قابل ارائه</h2><p>برای مشاهده توضیحات و مدارک پیشنهادی هر خدمت، مورد مربوط را انتخاب کنید.</p></div>
+  <div id="serviceGrid" class="service-grid"></div>
+  <p class="notice">نوع و تعداد مدارک نهایی به موضوع سند، وضعیت اشخاص و مقررات جاری بستگی دارد. پیش از مراجعه، با دفتر تماس بگیرید.</p>
+</section>
+
+<section id="documents" class="section section-tint">
+ <div class="container">
+  <div class="section-heading"><span class="eyebrow">آمادگی پیش از مراجعه</span><h2>مدارک مورد نیاز</h2><p>نوع خدمت را انتخاب کنید تا چک‌لیست عمومی و مدارک اختصاصی نمایش داده شود.</p></div>
+  <div class="document-panel">
+   <label for="docSelect">انتخاب خدمت</label><select id="docSelect"></select>
+   <div id="docContent" class="doc-content" aria-live="polite"></div>
+  </div>
+  <p class="notice">این فهرست راهنمای عمومی است و جایگزین بررسی پرونده توسط دفترخانه یا استعلام از مراجع ذی‌صلاح نیست.</p>
+ </div>
+</section>
+
+<section id="calculator" class="section container">
+ <div class="section-heading"><span class="eyebrow">برآورد اولیه</span><h2>محاسبه هزینه سند</h2><p>این ابزار برای راهنمایی اولیه است؛ مبلغ قطعی فقط پس از بررسی مشخصات سند و هزینه‌های قانونی قابل اعلام است.</p></div>
+ <div class="calculator-layout">
+  <form id="calcForm" class="calc-form">
+   <label for="calcType">نوع سند</label>
+   <select id="calcType">
+    <option value="attorney">وکالت‌نامه</option><option value="consent">رضایت‌نامه</option><option value="declaration">اقرارنامه</option>
+    <option value="property">انتقال قطعی ملک</option><option value="life">صلح عمری</option><option value="signature">گواهی امضا</option><option value="single">صدور سند مالکیت تک‌برگی</option>
+   </select>
+   <div id="valueWrap" hidden><label for="propertyValue">ارزش مبنای محاسبه (ریال)</label><input id="propertyValue" type="number" min="0" inputmode="numeric" placeholder="فقط در صورت اطلاع وارد کنید"></div>
+   <label for="calcNote">توضیحات تکمیلی (اختیاری)</label><textarea id="calcNote" rows="3" placeholder="مثلاً موضوع وکالت یا نوع ملک"></textarea>
+   <button class="btn btn-primary" type="submit">نمایش راهنمای هزینه</button>
+  </form>
+  <div id="calcResult" class="calc-result" aria-live="polite"><div class="result-icon">٪</div><h3>برآورد هزینه</h3><p>نوع سند را انتخاب کنید و روی «نمایش راهنمای هزینه» بزنید.</p></div>
+ </div>
+ <p class="notice"><strong>توجه:</strong> برای جلوگیری از نمایش مبلغ نادرست، تا زمان درج و تأیید جدول رسمی تعرفه‌های سال ۱۴۰۵ توسط دفتر، این نسخه مبلغ ساختگی محاسبه نمی‌کند. هزینه‌های قانونی و مالیاتی ممکن است جداگانه محاسبه شوند.</p>
+</section>
+
+<section id="forms" class="section section-tint">
+ <div class="container">
+  <div class="section-heading"><span class="eyebrow">فایل‌های کاربردی</span><h2>دریافت فرم</h2><p>فایل‌های مورد تأیید دفتر در این قسمت قرار می‌گیرند.</p></div>
+  <div class="empty-state"><div class="empty-icon">⇩</div><h3>فایل‌ها به‌زودی اضافه می‌شوند</h3><p>پس از افزودن فایل‌ها به پوشه <code>forms</code> و ثبت نام آن‌ها در فایل <code>forms.js</code>، لینک دریافت در این بخش نمایش داده می‌شود.</p></div>
+  <div id="formsList" class="forms-grid"></div>
+ </div>
+</section>
+
+<section id="remote" class="section container">
+ <div class="section-heading"><span class="eyebrow">ارتباط غیرحضوری</span><h2>ارسال مدارک از طریق پیام‌رسان‌ها</h2><p>برای هماهنگی و ارسال مدارک، پیام‌رسان مورد نظر را انتخاب کنید. لطفاً مدارک هویتی را فقط پس از اطمینان از حساب مقصد ارسال کنید.</p></div>
+ <div id="messengerGrid" class="messenger-grid"></div>
+ <p class="notice">لینک‌ها با شماره همراه اعلام‌شده ساخته شده‌اند. اگر حسابی در پیام‌رسانی فعال نباشد یا شماره به آن متصل نباشد، ممکن است لینک باز نشود.</p>
+</section>
+
+<section id="faq" class="section section-tint">
+ <div class="container">
+  <div class="section-heading"><span class="eyebrow">راهنمای مراجعه‌کنندگان</span><h2>سوالات متداول</h2></div>
+  <div class="faq-list">
+   <details><summary>آیا قبل از مراجعه می‌توانم مدارک را بررسی کنم؟</summary><p>بله. چک‌لیست عمومی هر خدمت در بخش «مدارک» درج شده است. برای تأیید مدارک متناسب با موضوع پرونده، با دفتر تماس بگیرید.</p></details>
+   <details><summary>آیا ارسال مدارک در پیام‌رسان به معنی ثبت سند است؟</summary><p>خیر. ارسال مدارک صرفاً برای هماهنگی و بررسی اولیه است و به‌تنهایی به معنی پذیرش نهایی مدارک، احراز هویت یا تنظیم و ثبت سند نیست.</p></details>
+   <details><summary>هزینه نهایی سند چگونه مشخص می‌شود؟</summary><p>هزینه به نوع سند و شرایط آن بستگی دارد و ممکن است شامل حق‌التحریر، حق‌الثبت، مالیات و هزینه‌های قانونی دیگر باشد. مبلغ نهایی پس از بررسی اطلاعات و استعلام‌های لازم مشخص می‌شود.</p></details>
+   <details><summary>برای تنظیم وکالت‌نامه چه مدارکی لازم است؟</summary><p>معمولاً مدارک هویتی معتبر موکل و وکیل و اطلاعات دقیق موضوع وکالت لازم است. برای وکالت‌های مربوط به ملک، خودرو یا امور خاص، مدارک تکمیلی نیز ممکن است نیاز باشد.</p></details>
+   <details><summary>ساعات کاری دفتر چیست؟</summary><p>شنبه تا چهارشنبه از ساعت ۸ تا ۱۴ و پنجشنبه از ساعت ۸ تا ۱۳. تعطیلات رسمی تابع مقررات مربوط است.</p></details>
+   <details><summary>دفتر در کدام نشانی قرار دارد؟</summary><p>تبریز، خیابان راه‌آهن، تقاطع خطیب، اول خیابان دامپزشکی، نبش کوی حمدی، ساختمان آسا، طبقه فوقانی کلینیک دامپزشکی سینا، دفتر اسناد رسمی ۱۳۸.</p></details>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="section container">
+ <div class="section-heading"><span class="eyebrow">در ارتباط باشید</span><h2>تماس با دفتر</h2><p>دفتر اسناد رسمی ۱۳۸ تبریز — سردفتر غلامرضا برجی دولت‌آباد</p></div>
+ <div class="contact-grid">
+  <div class="contact-card"><span class="contact-symbol">☎</span><h3>تلفن سردفتر</h3><a href="tel:04134413842">۰۴۱۳۴۴۱۳۸۴۲</a></div>
+  <div class="contact-card"><span class="contact-symbol">☎</span><h3>تلفن کارکنان</h3><a href="tel:04134435313">۰۴۱۳۴۴۳۵۳۱۳</a></div>
+  <div class="contact-card"><span class="contact-symbol">▣</span><h3>تلفن همراه</h3><a href="tel:09146618149">۰۹۱۴۶۶۱۸۱۴۹</a></div>
+  <div class="contact-card"><span class="contact-symbol">◷</span><h3>ساعات کاری</h3><p>شنبه تا چهارشنبه: ۸ تا ۱۴<br>پنجشنبه: ۸ تا ۱۳</p></div>
+ </div>
+ <div class="address-card"><div><span class="eyebrow">نشانی دفتر</span><h3>تبریز، خیابان راه‌آهن، تقاطع خطیب</h3><p>اول خیابان دامپزشکی، نبش کوی حمدی، ساختمان آسا، طبقه فوقانی کلینیک دامپزشکی سینا، دفتر اسناد رسمی ۱۳۸</p><a class="btn btn-primary" href="https://maps.app.goo.gl/jojqj24Jx8FBYRfeA" target="_blank" rel="noopener noreferrer">مشاهده روی نقشه ↗</a></div><div class="map-placeholder">نقشه و نشانی<br><small>برای مسیریابی روی دکمه بزنید</small></div></div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="container footer-inner"><div><strong>دفتر اسناد رسمی ۱۳۸ تبریز</strong><p>سردفتر: غلامرضا برجی دولت‌آباد</p></div><a href="#home">بازگشت به بالای صفحه ↑</a><small>اطلاعات این وب‌سایت جنبه راهنمایی دارد؛ در موارد اختلاف، مقررات و استعلام رسمی ملاک است.</small></div></footer>
+<script src="script.js"></script>
+<script src="forms.js"></script>
+</body>
+</html>
